@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style   -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="fontawesome.css/all.min.css" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-me">
+        <div class="logo">
+          <img src="assets/img-zfaf/logo.png" alt="" />
+        </div>
+        <div class="btn-search">
+          <input
+            class="input-search"
+            type="text"
+            placeholder=" ما الذي تبحث عنه ...... ؟"
+          />
+        </div>
+        <div class="link">
+          <button>تسجيل الدخول</button>
+          <button>أنشاء حساب</button>
+          <button><i class="fa-solid fa-briefcase"></i> الشركات</button>
+        </div>
+        <button class="nav-toggle-btn">
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+        <nav class="link-list">
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index-offers.html">العروض</a></li>
+            <li><a href="index-articles.html">المقالات</a></li>
+            <li><a href="index-planning.html">قسم تخطيط حفلات الزفاف</a></li>
+            <li><a href="#">اللغة</a></li>
+            <li><a href="#">تسجيل الدخول</a></li>
+            <li><a href="#">أنشاء حساب</a></li>
+            <li><a href="#">الشركات</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container-me">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="index-offers.html">العروض</a></li>
+          <li><a href="index-articles.html">المقالات</a></li>
+          <li><a href="index-planning.html">قسم تخطيط حفلات الزفاف</a></li>
+          <li><a href="#">اللغة</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="details-hell">
+      <div class="name-hotel">
+        <div class="container-me">
+          <h1>فندق كراون بلازا منهل</h1>
+          <div class="icon">
+            <span>التعليقات ( 1)5,0<i class="fa-solid fa-star"></i></span>
+            <span>الرياض<i class="fa-solid fa-location-dot"></i></span>
+            <span>+966ْXXXXXXXX<i class="fa-solid fa-phone"></i></span>
+            <span>اتصل بنا<i class="fa-brands fa-whatsapp"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="container-me">
+        <div class="details-hotel">
+          <div class="input-map">
+            <div class="input-details">
+              <input type="text" placeholder="الاسم الاول والاخير" />
+              <input type="email" placeholder="البريد الالكتروني" />
+              <input type="tel" placeholder="رقم الهاتف" />
+              <input
+                type="text"
+                placeholder="موعد الزفاف"
+                onfocus="this.type='date'"
+                class="date"
+              />
+              <input
+                type="text"
+                list="examplelists"
+                placeholder="الميزانية للشخص الواحد"
+              />
+              <datalist id="examplelists">
+                <option>1</option>
+              </datalist>
+              <input
+                type="text"
+                list="examplelists2"
+                placeholder="عدد المدعويين الى الحفل تقريبا"
+              />
+              <datalist id="examplelists2">
+                <option>2</option>
+              </datalist>
+              <textarea
+                name=""
+                id=""
+                cols="55"
+                rows="5"
+                placeholder=".......الرسالة"
+              ></textarea>
+              <div class="shekbox">
+                <label for="checkbox"
+                  >لقد قد قرأت نص اتفاقية المستخدم وأقر بالموافقة عليها.</label
+                >
+                <input type="checkbox" name="" id="checkbox" />
+              </div>
+              <button>طلب السعر</button>
+            </div>
+            <div class="map">map</div>
+          </div>
+          <div class="img-title">
+            <div class="slide-hotel">
+              <div class="img-slide">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img-zfaf/hall.jpeg" class="" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img-zfaf/hall.jpeg" class="" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img-zfaf/hall.jpeg" class="" alt="..." />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <h1>سعة الاشخاص 200<i class="fa-solid fa-user-group"></i></h1>
+
+              <h1>
+                السعر للشخص الواحد 500 ريال
+                <i class="fa-solid fa-clipboard-list"></i>
+              </h1>
+            </div>
+            <div class="comments">
+              <div class="img-comments">
+                <img src="assets/img-zfaf/sara.png" alt="" />
+              </div>
+              <div class="text-comments">
+                <div class="user-btn">
+                  <h2>مستخدم جديد</h2>
+                  <span class="item">
+                    <span>الجودة 5,0</span>
+                    <span>الموظفين 5,0</span>
+                    <span>التواصل 5,0</span>
+                  </span>
+                </div>
+                <p>
+                  روعه نظافة وترتيب وخدمه والاكل يواجه ولذيذ.. اشكر المسؤول
+                  Racky تعاملة جدا رائع وفاهم شغله صح .. الله يوفق العرسان يارب
+                  .. والحمدلله اخترنا المكان المناسب .
+                </p>
+                <h2>التعليقات</h2>
+              </div>
+            </div>
+            <div class="stars-hotel">
+              <h1>عدد نجوم الفندق</h1>
+              <span>5 نجوم</span>
+              <div class="line"></div>
+              <h1>السعر للشخص الواحد</h1>
+              <span>500 ريال</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
