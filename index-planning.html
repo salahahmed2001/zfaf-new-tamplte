@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>زفاف</title>
     <!-- style   -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- normalize -->
@@ -30,6 +30,9 @@
             type="text"
             placeholder=" ما الذي تبحث عنه ...... ؟"
           />
+        </div>
+        <div class="icon-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="link">
           <button>تسجيل الدخول</button>
@@ -187,6 +190,67 @@
       </div>
     </section>
     <!-- ===================================================================== -->
+    <section class="displaynone">
+      <div class="container-me">
+        <div class="sign-in">
+          <img src="assets/img-zfaf/logo.png" alt="" />
+          <input type="email" placeholder="البريد الالكتروني" />
+          <input type="password" name="" id="" placeholder="كلمة السر" />
+          <a href="#">هل نسيت كلمة السر ؟</a>
+          <button>تسجيل الدخول</button>
+          <a href="#">أنشاء حساب جديد</a>
+          <div class="icon-sign">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="icon-sign-in">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================ -->
+    <section class="displaynone-up">
+      <div class="container-me">
+        <div class="sign-up">
+          <img src="assets/img-zfaf/logo.png" alt="" />
+          <input type="text" placeholder="الاسم الاول والاخير" />
+          <input type="email" placeholder="البريد الالكتروني" />
+          <input type="tel" placeholder="رقم الهاتف" />
+          <input type="password" name="" id="" placeholder="كلمة السر" />
+          <input
+            type="text"
+            placeholder="موعد الزفاف"
+            onfocus="this.type='date'"
+            class="date"
+          />
+          <input
+            type="text"
+            list="examplelists"
+            placeholder="المدينة التي سيقام فيها الحفل"
+          />
+          <datalist id="examplelists">
+            <option>1</option>
+          </datalist>
+
+          <div class="shekbox">
+            <label for="checkbox"
+              >لقد قد قرأت نص اتفاقية المستخدم وأقر بالموافقة عليها.</label
+            >
+            <input type="checkbox" name="" id="checkbox" />
+          </div>
+          <button>انشاء حساب</button>
+          <a href="#">تسجيل الدخول</a>
+          <div class="icon-sign">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="icon-sign-up">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
