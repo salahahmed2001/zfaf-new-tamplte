@@ -44,12 +44,10 @@ BtnSignUpNone.addEventListener("click", () => {
   SignUp.style.display = "none";
 });
 setInterval(() => {
-  // cards.style.display = "none";
   ShowAds.style.display = "flex";
 }, 300000);
 
 BtnAds.addEventListener("click", () => {
-  // cards.style.display = "flex";
   ShowAds.style.display = "none";
 });
 VewDetails.addEventListener("click", function () {
