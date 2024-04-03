@@ -17,6 +17,38 @@
   box-sizing: border-box;
 }
 /* #REUSED STYLE */
+
+/* ============================================= */
+
+/* .sasa {
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+  .warning {
+    position: absolute;
+    display: block;
+    color: darken(#ededed, 10%);
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+  }
+} */
+
+/* ============================================= */
+.warning {
+  width: 85%;
+  text-align: end;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-Almarai);
+  font-weight: 100;
+  color: red;
+  padding: 0px 15px;
+  /* display: none; */
+  height: 1px;
+  /* gap: none; */
+}
 .displaynone {
   background-color: #00000036;
   width: 100%;
@@ -1588,11 +1620,20 @@
 /* start planning page */
 /* ============================================================ */
 /* start planning */
+.planning-grob {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 .planning {
+  position: absolute;
+  transition: 1s;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   h1 {
     font-family: var(--font-Almarai);
     font-weight: 700;
@@ -1629,7 +1670,7 @@
   justify-content: center;
   width: 100%;
   height: 200px;
-  a {
+  button {
     width: 30%;
     height: 50px;
     border-radius: 24px;
@@ -1679,8 +1720,12 @@
 /* =======================================================*/
 /* start individuals */
 .individuals {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  left: -100%;
+  transition: 1s;
+  width: 100%;
 }
 .individuals .container-me {
   display: flex;
@@ -1723,6 +1768,7 @@
     height: 76px;
     display: flex;
     align-items: center;
+    padding: 10px;
     &:active {
       border: 1px solid var(--light-blue);
     }
@@ -1733,6 +1779,7 @@
     label {
       width: 90%;
       text-align: end;
+      margin-right: 10px;
     }
   }
   h1 {
@@ -1759,21 +1806,27 @@
 }
 @media (max-width: 768px) {
   .individuals .container-me .input-indiv {
-    width: 70%;
+    width: 342px;
   }
 }
 @media (max-width: 520px) {
   .individuals .container-me .input-indiv {
+    padding: 10px;
     width: 90%;
   }
 }
 /* ================================================== */
 /* start details */
 .detls {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: 100vh;
+  position: absolute;
+  left: -100%;
+  transition: 1s;
+  width: 100%;
 }
+
 .detls .container-me {
   display: flex;
   align-items: center;
@@ -1824,6 +1877,7 @@
     border: 1px solid var(--light-blue);
     height: 243px;
     outline-color: var(--dark-pink);
+    padding: 10px;
   }
   .button-go-back {
     width: 80%;
@@ -1861,20 +1915,25 @@
 }
 @media (max-width: 768px) {
   .detls .container-me .textarea {
-    width: 70%;
+    width: 342px;
   }
 }
 @media (max-width: 520px) {
   .detls .container-me .textarea {
     width: 90%;
+    padding: 10px;
   }
 }
 /* ======================================================== */
 /* start contact */
 .contact {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: 100vh;
+  position: absolute;
+  left: -100%;
+  transition: 1s;
+  width: 100%;
 }
 .contact .container-me {
   display: flex;
@@ -1884,7 +1943,7 @@
 
 .contact .container-me .input-contact {
   width: 50%;
-  height: 607px;
+  height: 710px;
   border-left: 1px solid var(--selvr);
   border-right: 1px solid var(--selvr);
   border-radius: 12px;
@@ -1924,8 +1983,11 @@
     line-height: 1.5;
     text-align: end;
   }
-  input {
+  .div {
     width: 90%;
+  }
+  input {
+    width: 100%;
     text-align: end;
     height: 50px;
     border: 1px solid var(--selvr);
@@ -1986,12 +2048,13 @@
 }
 @media (max-width: 768px) {
   .contact .container-me .input-contact {
-    width: 70%;
+    width: 342px;
   }
 }
 @media (max-width: 520px) {
   .contact .container-me .input-contact {
     width: 90%;
+    padding: 10px;
   }
 }
 /* ========================================================== */
