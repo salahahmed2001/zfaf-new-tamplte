@@ -50,13 +50,13 @@
   background-color: #00000036;
   width: 100%;
   height: 143.8vh;
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   top: 0px;
   left: 0px;
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .ads {
   background-color: #00000036;
@@ -540,7 +540,7 @@
   background-color: var(--white);
   margin: auto;
   width: 40%;
-  height: 580px;
+  height: 600px;
   border-radius: 24px;
   color: var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -548,6 +548,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  gap: 10px;
   position: relative;
   .icon-sign-in {
     position: absolute;
@@ -556,20 +557,24 @@
     color: var(--light-blue);
   }
   img {
-    width: 165px;
-    height: 162px;
-    margin-bottom: 30px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+  }
+  .div-input {
+    width: 95%;
+    text-align: end;
   }
   input {
     text-align: end;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     height: 50px;
     border-radius: 24px;
     border: 1px solid var(--selvr);
     outline-color: var(--light-blue);
     padding: 20px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
   a {
     font-family: var(--font-Almarai);
@@ -632,17 +637,19 @@
 /* ============================================================= */
 /* start sign up */
 .sign-up {
+  z-index: 9;
   background-color: var(--white);
   margin: auto;
   width: 500px;
-  height: 846px;
+  height: 1170px;
   border-radius: 24px;
   color: var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  gap: 10px;
+  padding: 20px;
   position: relative;
   .icon-sign-up {
     position: absolute;
@@ -651,9 +658,13 @@
     color: var(--light-blue);
   }
   img {
-    width: 165px;
-    height: 162px;
-    margin-bottom: 30px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  .div-input {
+    width: 100%;
+    text-align: end;
   }
   input {
     text-align: end;
@@ -664,14 +675,14 @@
     border: 1px solid var(--selvr);
     outline-color: var(--light-blue);
     padding: 20px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
   .shekbox {
     display: flex;
     justify-content: end;
     padding: 10px;
     width: 95%;
-    #checkbox {
+    #checkbox-signup {
       width: 5%;
       height: auto;
       text-align: end;

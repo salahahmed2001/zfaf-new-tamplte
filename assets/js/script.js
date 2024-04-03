@@ -22,6 +22,8 @@ let BtnBack = document.querySelector(".back");
 let Contact = document.querySelector(".contact");
 let BtnBackContact = document.querySelector(".back-detls");
 let Send = document.querySelector(".send");
+let BtnFormSignin = document.querySelector(".btn-form-signin");
+let BtnFormSignup = document.querySelector(".btn-form-signup");
 
 BtnTogle.addEventListener("click", () => {
   Menu.classList.toggle("active-list");
@@ -43,6 +45,65 @@ BtnSignInNone.addEventListener("click", () => {
 BtnSignUpNone.addEventListener("click", () => {
   SignUp.style.display = "none";
 });
+BtnFormSignin.addEventListener("click", () => {
+  let InputEmailSignin = document.getElementById("email-signin");
+  if (InputEmailSignin.value != "") {
+    console.log("salah");
+  } else {
+    document.querySelector(".warning-email-signin").innerHTML =
+      "برجاء كتابه البريد الالكتروني او رقم الهاتف";
+  }
+  let InputPasswordSignin = document.getElementById("password-signin");
+  if (InputPasswordSignin.value != "") {
+  } else {
+    document.querySelector(".warning-password-signin").innerHTML =
+      "برجاء كتابه كلمة المرور";
+  }
+});
+BtnFormSignup.addEventListener("click", () => {
+  let InputNameSignup = document.getElementById("name-signup");
+  if (InputNameSignup.value != "") {
+  } else {
+    document.querySelector(".warning-name-signup").innerHTML =
+      "برجاء كتابه الاسم ";
+  }
+  let InputEmailSignup = document.getElementById("email-signup");
+  if (InputEmailSignup.value != "") {
+  } else {
+    document.querySelector(".warning-email-signup").innerHTML =
+      "برجاء كتابه البريد الالكتروني او رقم الهاتف";
+  }
+  let InputPhoneSignup = document.getElementById("phone-signup");
+  if (InputPhoneSignup.value != "") {
+  } else {
+    document.querySelector(".warning-phone-signup").innerHTML =
+      "برجاء كتابه رقم الهاتف";
+  }
+  let InputPasswordSignup = document.getElementById("password-signup");
+  if (InputPasswordSignup.value != "") {
+  } else {
+    document.querySelector(".warning-password-signup").innerHTML =
+      "برجاء كتابه كلمة المرور";
+  }
+  let InputDateSignup =document.getElementById("date-signup");
+  if (InputDateSignup.value != "") {
+  } else {
+    document.querySelector(".warning-date-signup").innerHTML =
+      "يجب ادخال موعد الزفاف";
+  }
+  let InputCitySignup = document.getElementById("city-signup");
+  if (InputCitySignup.value != "") {
+  } else {
+    document.querySelector(".warning-city-signup").innerHTML =
+      "يجب ادخال المدينة";
+  }
+  let InputChecbox = document.querySelector(".checkbox-signup");
+  if (document.getElementById("checkbox-signup").checked) {
+  } else {
+    InputChecbox.style.color="red"
+  }
+});
+
 setInterval(() => {
   ShowAds.style.display = "flex";
 }, 300000);
